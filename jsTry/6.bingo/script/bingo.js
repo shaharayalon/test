@@ -50,7 +50,6 @@ const setNumbers = () => {
 };
 
 const bingoplay = () => {
-
   if (numbersArr) {
     numbersArr = shuffle(numbersArr);
   }
@@ -99,11 +98,10 @@ const chooseNumbers = () => {
     }
   }
 
-
   if (chosenNum) {
     chosenNum++;
   }
-  if (chosenNumbers.length == 2) {
+  if (chosenNumbers.length == 45) {
     setTimeout(stopGame, 4000);
   }
 };
@@ -119,7 +117,6 @@ const stopGame = () => {
 
 const checkBingo = (place) => {
   if (numPlace) {
-
     for (let i = 0; i <= 20; i += 5) {
       if (
         numPlace[i].style.backgroundColor == "red" &&
@@ -182,7 +179,6 @@ const checkBingo = (place) => {
 };
 
 const checkHowMuchBingos = () => {
-
   if (numPlace && bingos) {
     bingos = 0;
     for (let i = 0; i <= 20; i += 5) {
