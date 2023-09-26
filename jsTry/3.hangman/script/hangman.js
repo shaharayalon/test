@@ -202,7 +202,7 @@ const checkLetter = (letterInput) => {
   } else if (letterHelp == 0) {
     loseHelper++;
     badLetters.innerHTML += letterInput + ", ";
-
+    console.log("specCover", specCover);
     covers[specCover].style.display = "none";
     specCover++;
 
@@ -232,8 +232,9 @@ const winCheck = () => {
 };
 
 const loseCheck = () => {
-  setTimeout(() => {
-    if (loseHelper == 8) {
+  if (loseHelper == 8) {
+    loseCounter++;
+    setTimeout(() => {
       loseContainer.style.display = "flex";
       helpWord = "";
       for (let word of quizArr[questNum]) {
@@ -241,13 +242,12 @@ const loseCheck = () => {
       }
       conatiner.style.display = "none";
       loseWord.innerHTML = helpWord;
-      loseCounter++;
+
       winsAndLosesSoFar.innerHTML = `עד כה ניצחת ${winCounter} פעמים, והפסדת עד כה ${loseCounter} פעמים. <br> נשארו לך עוד ${
         22 - winCounter - loseCounter
       } שחקנים לנחש, אז מה בא לך?`;
-      
-    }
-  }, 1500);
+    }, 1500);
+  }
 };
 
 window.addEventListener("load", () => {
