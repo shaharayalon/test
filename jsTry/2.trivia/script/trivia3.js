@@ -375,8 +375,7 @@ window.addEventListener("load", () => {
   if (questionNum) {
     questionNum = shuffle(questionNum);
   }
-  if (pName) {
-  }
+
   if (playersRate) {
     playersRate = JSON.parse(localStorage.getItem("thePlayersRate"));
   }
@@ -489,29 +488,26 @@ window.addEventListener("load", () => {
       if (gameOverWin) {
         gameOverWin.style.display = "none";
       }
-      if (playersRate.length) {
-        for (let i = 0; i < playersRate.length; i++) {
-          if (playersRate[i].correctAnswers == you.correctAnswers) {
-            if (playersRate[i].totalTime > you.totalTime) {
-              playersRate.splice(i, 0, you);
-              localStorage.setItem(
-                "thePlayersRate",
-                JSON.stringify(playersRate)
-              );
-              setTable();
-              return;
-            }
-          } else if (playersRate[i].correctAnswers < you.correctAnswers) {
+      // if (playersRate.length) {
+      for (let i = 0; i < playersRate.length; i++) {
+        if (playersRate[i].correctAnswers == you.correctAnswers) {
+          if (playersRate[i].totalTime > you.totalTime) {
             playersRate.splice(i, 0, you);
             localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
             setTable();
             return;
           }
+        } else if (playersRate[i].correctAnswers < you.correctAnswers) {
+          playersRate.splice(i, 0, you);
+          localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
+          setTable();
+          return;
         }
-        playersRate.push(you);
-      } else {
-        playersRate.push(you);
       }
+      playersRate.push(you);
+      // } else {
+      //   playersRate.push(you);
+      // }
       localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
       setTable();
     });
