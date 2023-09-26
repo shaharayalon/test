@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    direction: rtl;
+    display: grid;
+    grid-template-areas: 
+    'right left'
+    ;
+}
+
+.right{
+    grid-area: right;
+}
+
+.right .box1{
+    width: 400px;
+    height: 10px;
+    background-color: #FDBD03;
+}
+
+.right img{
+    width: 374.5px;
+    height: 562.8px;
+}
+
+.left{
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .image{
+    width: 60px;
+    height: 60px;
+    background-color: #FDBD03;
+    border-radius: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+}
+
+.left .image img{
+    width: 30px;
+    height: 30px;
+}
+
+.left h1{
+    color: #FDBD03;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.left p{
+    color: #020253;
+    font-size: 20px;
+    font-weight: 400;
+}
+.left .contact{
+    display: flex;
+    flex-direction: row;
+    align-self: end;
+}
+.left form{
+    display: grid;
+    grid-template-areas: 
+    'name email'
+    'inputname inputemail'
+    'textarea textarea'
+    'inputtextarea inputtextarea'
+    'btn btn'
+    ;
+}
+.name{
+    grid-area: name;
+}
+.inputname{
+    grid-area: inputname;
+}
+.email{
+    grid-area: email;
+}
+.inputemail{
+    grid-area: inputemail;
+}
+.textarea{
+    grid-area: textarea;
+}
+.inputtextarea{
+    grid-area: inputtextarea;
+}
+.btn{
+    grid-area: btn;
+}
+
+.left .box2{
+    width: 800px;
+    height: 10px;
+    background-color: #FDBD03;
+    align-self: end;
+}

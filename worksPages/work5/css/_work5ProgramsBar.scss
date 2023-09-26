@@ -1,0 +1,28 @@
+.programs{
+    background-color: white;
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+    @media (max-width: 800px){
+    height: 100px;
+    direction: rtl;
+    }
+
+}
+.programs img{
+    width: 90px;
+    height: 90px;
+    margin-left: -450px;
+    margin-right: -450px;
+    @media (max-width: 800px){
+    width: 70px;
+    height: 70px;
+    margin-left: -400px;
+    margin-right: -400px;
+    }
+
+}

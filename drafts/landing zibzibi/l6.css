@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1{
+    background-color: #FDBD03;
+    height: 10px;
+    width: 400px;
+    align-self: start;
+}
+
+.whatsapp{
+    background-color: #FDBD03;
+    width: 60px;
+    height: 60px;
+    border-radius: 145px;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content img{
+    width: 374.5px;
+    height: 562.8px;
+}
+
+.content form{
+height: 200px;
+width: 500px;
+display: grid;
+grid-template-areas: 
+'h1 h1'
+'p p'
+'name mail'
+'namec mailc'
+'talabel talabel'
+'ta ta'
+'btn btn'
+;
+}
+
+.h1{
+    grid-area: h1;
+}
+
+.p{
+    grid-area: p;
+}
+
+.name{
+    grid-area: name;
+}
+
+.namec{
+    grid-area: namec;
+}
+
+.mail{
+    grid-area: mail;
+}
+
+.mailc{
+    grid-area: mailc;
+}
+
+.talabel{
+    grid-area: talabel;
+}
+
+.ta{
+    grid-area: ta;
+}
+
+.btn{
+    grid-area: btn;
+}
+
+.contact{
+    align-self: end;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact div{
+    background-color: #FDBD03;
+    width: 60px;
+    height: 60px;
+    border-radius: 145px;
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    width: 30px;
+    height: 30px;
+
+}
+
+.box2{
+background-color: #FDBD03;
+    height: 10px;
+    width: 50%;
+    align-self: end;
+
+}

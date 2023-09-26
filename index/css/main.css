@@ -1,0 +1,476 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed !important;
+  background-color: #FFFFFF;
+  border-top: 1px solid #1AE0EC;
+  height: 70px;
+  z-index: 2;
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    position: fixed !important;
+  }
+}
+.navbar nav {
+  width: 100vw;
+  color: #FFFFFF;
+  opacity: 1;
+  direction: rtl;
+}
+@media screen and (max-width: 800px) {
+  .navbar nav {
+    height: 58px;
+  }
+}
+.navbar nav ul {
+  margin-top: 13px;
+  margin-right: 70px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 800px) {
+  .navbar nav ul {
+    gap: 3px;
+    background-color: white;
+    margin-right: 0;
+    padding-right: 30px;
+  }
+}
+.navbar nav ul li {
+  flex-direction: column;
+}
+.navbar nav ul li a.hamburger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .navbar nav ul li a.hamburger {
+    display: block;
+  }
+}
+.navbar nav ul li a {
+  font-size: 1.5em;
+  color: rgb(44, 44, 44);
+  font-family: "Heebo", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar nav ul li a:hover {
+  color: #1AE0EC;
+}
+@media screen and (max-width: 800px) {
+  .navbar nav ul li a {
+    display: none;
+  }
+}
+.navbar h1 {
+  font-family: futura;
+  font-size: 1.5em;
+  color: #444444;
+  margin-top: -47px;
+  margin-left: 20px;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menuContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+  .menuContainer.responsive a {
+    display: block;
+  }
+}
+.welcome {
+  width: 100vw;
+  height: 460px;
+  background-color: rgba(19, 232, 241, 0.3882352941);
+  direction: rtl;
+  padding-top: 120px;
+}
+@media screen and (max-width: 800px) {
+  .welcome {
+    height: 300px;
+    padding-top: 80px;
+  }
+}
+.welcome h1 {
+  margin-top: 50px;
+  font-family: heebo;
+  font-size: 5em;
+  font-weight: 900;
+  color: #3A3A3A;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .welcome h1 {
+    font-size: 2.5em;
+  }
+}
+.welcome p {
+  text-align: center;
+  font-family: heebo;
+  font-size: 1.25em;
+  font-weight: 500;
+  padding-right: 350px;
+  padding-left: 350px;
+}
+@media screen and (max-width: 800px) {
+  .welcome p {
+    font-size: 0.8em;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.programs {
+  background-color: white;
+  width: 100vw;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 800px) {
+  .programs {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.programs img {
+  width: 90px;
+  height: 90px;
+}
+
+.onMe {
+  width: 100vw;
+  height: 715px;
+  text-align: center;
+  direction: rtl;
+}
+.onMe img {
+  height: 100px;
+  width: 100px;
+  border-radius: 145px 145px 145px 145px;
+  margin-top: 100px;
+}
+@media screen and (max-width: 800px) {
+  .onMe img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.onMe h2 {
+  font-family: "Heebo", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  color: rgb(58, 58, 58);
+  opacity: 1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 800px) {
+  .onMe h2 {
+    font-size: 30px;
+  }
+}
+.onMe p {
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(58, 58, 58);
+  padding-right: 450px;
+  padding-left: 450px;
+  line-height: 1.8;
+}
+@media screen and (max-width: 800px) {
+  .onMe p {
+    font-size: 16px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+}
+.onMe button {
+  width: 260px;
+  height: 40px;
+  background-color: rgb(26, 224, 236);
+  color: rgb(58, 58, 58);
+  border-radius: 25px 25px 25px 25px;
+  border: 0px;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 45px;
+}
+@media screen and (max-width: 800px) {
+  .onMe button {
+    width: 150px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+.works {
+  width: 100vw;
+  height: 1550px;
+  background-color: rgb(246, 246, 246);
+  direction: rtl;
+  text-align: center;
+  z-index: 1;
+}
+@media screen and (max-width: 800px) {
+  .works {
+    height: 3000px;
+  }
+}
+.works h1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: rgb(58, 58, 58);
+  padding-top: 100px;
+}
+.works p {
+  padding-top: 10px;
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(58, 58, 58);
+}
+
+.container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+.container .card {
+  margin-right: 20px;
+  margin-left: 20px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.16);
+  font-family: "Heebo", sans-serif;
+  color: rgb(58, 58, 58);
+}
+@media screen and (max-width: 800px) {
+  .container .card {
+    margin-bottom: 30px;
+  }
+}
+.container .card .card-body h5 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.container .card .card-body p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.container .card .card-body .btn {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(26, 224, 236);
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(44, 44, 44);
+  text-align: center;
+}
+
+.gameWorks {
+  background-color: #e8e8e8 !important;
+  height: 1050px;
+}
+@media screen and (max-width: 800px) {
+  .gameWorks {
+    height: 2100px;
+  }
+}
+
+.contact {
+  width: 100vw;
+  height: 700px;
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: start;
+  }
+}
+.contact .contactContent {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+@media screen and (max-width: 800px) {
+  .contact .contactContent {
+    margin-right: 0;
+  }
+}
+.contact img {
+  width: 462px;
+  height: 402.6px;
+  margin: 0;
+  margin-right: 100px;
+}
+@media screen and (max-width: 800px) {
+  .contact img {
+    width: 231px;
+    height: 201.3px;
+  }
+}
+.contact h1 {
+  font-family: "Heebo", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  padding-top: 120px;
+}
+@media screen and (max-width: 800px) {
+  .contact h1 {
+    font-size: 25px;
+    padding-top: 0;
+  }
+}
+.contact p {
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  line-height: 1.8;
+  width: 500px;
+}
+@media screen and (max-width: 800px) {
+  .contact p {
+    font-size: 15px;
+    width: auto;
+  }
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form label {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: white;
+}
+@media screen and (max-width: 800px) {
+  .contact form label {
+    font-size: 12px;
+  }
+}
+.contact form input {
+  line-height: 2.2;
+  border: 0px solid #000;
+  border-bottom: 2px solid rgb(26, 224, 236);
+  margin-bottom: 10px;
+  width: 500px;
+}
+@media screen and (max-width: 800px) {
+  .contact form input {
+    width: auto;
+  }
+}
+.contact form textarea {
+  border: 0 solid #000;
+  border-bottom: 2px solid rgb(26, 224, 236);
+  margin-bottom: 30px;
+  width: 500px;
+}
+@media screen and (max-width: 800px) {
+  .contact form textarea {
+    height: 85px;
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
+.contact form .button {
+  width: 160px;
+  height: 40px;
+  background-color: rgb(26, 224, 236);
+  color: rgb(44, 44, 44);
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+@media screen and (max-width: 800px) {
+  .contact form .button {
+    font-size: 14px;
+    width: 120px;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 800px) {
+  .contact form .button {
+    width: 120px;
+    font-size: 14px;
+    height: 30px;
+  }
+}
+
+.icons {
+  width: 100vw;
+  height: 200px;
+  background-color: rgb(26, 224, 236);
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding-top: 70px;
+}
+@media screen and (max-width: 800px) {
+  .icons {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+.icons .icon img {
+  margin-bottom: 10px;
+}
+
+.footer {
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  border: 0px solid #000;
+  border-bottom: 2px solid rgb(26, 224, 236);
+  direction: rtl;
+}
+.footer p {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(26, 224, 236);
+  padding-top: 15px;
+  padding-right: 15px;
+}/*# sourceMappingURL=main.css.map */

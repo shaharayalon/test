@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5EEFF;
+    padding: 5%;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    'img1 img2 box1 box1'
+    'img3 img4 box1 box1'
+    'img5 img6 img7 img8'
+    'box2 box2 img9 img10'
+    'box2 box2 img11 img12'
+    'box2 box2 img13 img14'
+    ;
+    /* gap: 20px; */
+}
+.box1{
+background-color: #020253;
+grid-area: box1;
+/* width: 400px;
+height: 400px; */
+}
+
+.box1>h1{
+    font-family: assistant;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #0EE1DA;
+}
+
+.box1>p{
+font-family: assistant;
+font-size: 20px;
+font-weight: 400;
+text-align: center;
+color: #F9F9F9;
+}
+
+.box2{
+    background-color: #8E097C;
+    padding: 30px;
+    grid-area: box2;
+    /* width: 400px;
+    height: 600px; */
+    
+}
+
+.box2>h1{
+    font-family: assistant;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.box2>p{
+    font-family: assistant;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #F9F9F9;
+}
+
+.box2>form{
+    display: flex;
+    flex-direction: column;
+}
+
+.box2>form>label{
+    font-family: heebo;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0EE1DA;
+}
+
+.box2>form>input{
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: 2px solid #0EE1DA;
+    height: 30px;
+}
+
+.box2>form>textarea{
+    resize: none;
+    background-color: #E5EEFF;
+    border: 0;
+    border-bottom: 2px solid #0EE1DA;
+    height: 90px;
+}
+
+.btn{
+    background-color: #0EE1DA;
+    color: #011560;
+    font-family: heebo;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.container>img{
+    width: 200px;
+    height: 200px;
+}
+
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+.img8{
+    grid-area: img8;
+}
+.img9{
+    grid-area: img9;
+}
+.img10{
+    grid-area: img10;
+}
+.img11{
+    grid-area: img11;
+}
+.img12{
+    grid-area: img12;
+}
+.img13{
+    grid-area: img13;
+}
+.img14{
+    grid-area: img14;
+}

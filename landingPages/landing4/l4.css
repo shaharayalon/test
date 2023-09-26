@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(blueGround.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+}
+
+h1{
+    color: #D3E10E;
+    font-size: 86px;
+    font-weight: 700;
+    margin-top: 13%;
+    margin-bottom: 5vh;
+    text-align: center;
+}
+
+p{
+color: #F9F9F9;
+font-size: 20px;
+font-weight: 400;
+
+}
+
+
+.form{
+    margin-top: 20%;
+    gap: 10px;
+    display: grid;
+    width: 700px;
+    grid-template-areas: 
+    'name name name mail mail mail'
+    'name2 name2 mail2 mail2 btn btn'
+    ;
+}
+
+label{
+    color: #011560;
+    font-size: 16px;
+    font-weight: 700;
+}
+input{
+    background-color: #F6F6F6;
+    border: 0;
+    border-bottom: 1px solid #D3E10E;
+    height: 40px;
+    width: 300px;
+    font-size: 22px;
+}
+
+
+
+.name{
+    grid-area: name;
+}
+
+.mail{
+    grid-area: mail;
+    margin-right: -150px;
+}
+
+.name2{
+    grid-area: name2;
+}
+
+.mail2{
+    grid-area: mail2;
+}
+
+.btn{
+    grid-area: btn;
+    background-color: #D3E10E;
+    color: #011560;
+    font-size: 22px;
+    font-weight: 700;
+    border: 0;
+    height: 40px;
+    width: 100px;
+}
+
+
+@media screen and (max-width:800px) {
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100vw 40vh ;
+    /* background-color: pink; */
+}
+    h1{
+        font-size: 25px;
+        margin-top: 20%;
+        margin-bottom: 2vh;
+    }
+
+    p{
+        font-size: 15px;
+        text-align: center;
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    .form{
+        width: 100vw;
+        display: grid;
+        grid-template-areas: 
+        'name'
+        'name2'
+        'mail'
+        'mail2'
+        'btn'
+        ;
+        justify-content: center;
+        margin-top: 60%;
+    }
+
+
+    .mail{
+        margin-right: 0;
+    }
+    
+    .btn{
+        width: 300px;
+    }
+}
+    

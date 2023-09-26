@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Orange Vibe Landing Page</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f97e5e;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 400;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-weight: 900;
+            font-size: 60px;
+            /* margin-bottom: 40px; */
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container button[type="submit"] {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+        }
+
+        .form-container button[type="submit"] {
+            background-color: #ff7b5b;
+            color: #fff;
+            font-weight: 700;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .form-container button[type="submit"]:hover {
+            background-color: #ff6040;
+            font-weight: 800;
+            transform: translateX(3px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>איזה יופי שבא לך ווייבים של גאולה!</h1>
+        <p>שמע, לא נספר לאף אחד אבל אתה הולך לזהור חביבי!</p>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="כתוב את שמך המלא על מלא">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="הדואר האלקטרוני שלך">
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">שלח לחמך</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #281EFF, #2DFF8C);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+.content h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 150px;
+  font-weight: 400;
+  text-shadow: 0 0 36px rgba(0, 0, 0, 0.53);
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+@media (max-width: 800px) {
+  .content h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.content h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .content h2 {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+.content p {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  color: rgb(249, 249, 249);
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+@media (max-width: 800px) {
+  .content p {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.content form {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .content form {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.content form label {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  color: rgb(249, 249, 249);
+  font-size: 16px;
+}
+@media (max-width: 800px) {
+  .content form label {
+    font-size: 11px;
+  }
+}
+.content form input {
+  margin-top: 5px;
+  background-color: rgba(246, 246, 246, 0.14);
+  border: 1px solid rgb(255, 255, 255);
+  width: 350px;
+  height: 32px;
+  margin-left: 20px;
+}
+@media (max-width: 800px) {
+  .content form input {
+    width: 320px;
+  }
+}
+.content form .btn {
+  width: 140px;
+  height: 32px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(28, 28, 28);
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 24px;
+}
+@media (max-width: 800px) {
+  .content form .btn {
+    width: 320px;
+  }
+}/*# sourceMappingURL=landing1Style.css.map */

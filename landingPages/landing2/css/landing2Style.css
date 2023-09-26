@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    direction: rtl;
+    height: 100vh;
+    @media screen and (max-width:800px) {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.background img{
+    width: 100vw;
+    height: 50vh;
+}
+
+.background .content{
+    width: 500px;
+    height: 600px;
+    background-color: rgba(26, 26, 26, 0.83);
+    position: relative;
+    padding: 40px;
+    bottom: 300px;
+    right: 200px;
+    @media screen and (max-width:800px) {
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 600px;
+        padding: 10px;
+        bottom: 200px;
+        
+    }
+}
+
+.background .content h1{
+    font-family: 'Heebo', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+
+    @media screen and (max-width:800px) {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+}
+
+.background .content p{
+    font-family: 'Heebo', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(249, 249, 249, 1);
+    margin-bottom: 70px;
+    @media screen and (max-width:800px) {
+        text-align: center;
+        
+    }
+}
+
+.background .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.background .content form label{
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    @media screen and (max-width:800px) {
+    font-size: 14px;   
+    }
+
+}
+
+.background .content form input{
+    height: 50px;
+    border: 1px solid rgba(211, 28, 117, 1);
+    margin-bottom: 20px;
+    @media screen and (max-width:800px) {
+        height: 40px;
+        margin-bottom: 20px;
+        width: 200px;
+        
+    }
+}
+
+.background .content form .btn{
+    background-color: rgba(211, 28, 117, 1);
+    border: 0;
+    width: 160px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+
+    @media screen and (max-width:800px) {
+    width: 100px;    
+    }
+}
