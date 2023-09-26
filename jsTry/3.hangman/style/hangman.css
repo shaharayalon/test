@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lunasima", sans-serif;
+}
+
+#conatiner {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+/* #quizContainer {
+  background-color: pink;
+  grid-row: 1/13;
+  grid-column: 1/9;
+}
+
+#hangmanContainer {
+  background-color: yellow;
+  grid-row: 1/13;
+  grid-column: 9/13;
+} */
+
+#nameContainer {
+  /* background-color: yellow; */
+  grid-row: 5/6;
+  grid-column: 2/8;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  /* color: palevioletred; */
+}
+
+#letterLabel {
+  /* background-color: red; */
+  grid-row: 8/10;
+  grid-column: 3/7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+#letterInput {
+  grid-row: 10/11;
+  grid-column: 4/6;
+  text-align: center;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 10%;
+  width: 10vw;
+  display: flex;
+  justify-self: center;
+}
+
+#checkLetterBtn {
+  grid-row: 11/12;
+  grid-column: 4/6;
+  font-size: 2vw;
+  color: palevioletred;
+}
+
+#badLetters {
+  grid-row: 9/12;
+  grid-column: 10/12;
+  /* background-color: orange; */
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px dotted black;
+}
+
+#playerNameArea {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  /* background-color: navajowhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4vw;
+  color: palevioletred;
+}
+
+#winNumberArea {
+  grid-row: 1/2;
+  grid-column: 10/11;
+  background-color: palevioletred;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+  border: 0.5px solid grey;
+  border-left: 0;
+}
+
+#loseNumberArea {
+  grid-row: 1/2;
+  grid-column: 11/12;
+  background-color: white;
+  color: palevioletred;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.0625em;
+  padding-right: 0.0625em;
+  border: 0.5px solid grey;
+  border-right: 0;
+}
+
+#hangmanpic {
+  grid-column: 9/12;
+  grid-row: 3/8;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-self: end;
+}
+
+#cover1 {
+  grid-column: 9/10;
+  grid-row: 4/5;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+#cover2 {
+  grid-column: 10/11;
+  grid-row: 4/5;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+#cover3 {
+  grid-column: 9/10;
+  grid-row: 5/6;
+  background-color: white;
+}
+#cover4 {
+  grid-column: 10/11;
+  grid-row: 5/6;
+  background-color: white;
+}
+#cover5 {
+  grid-column: 10/11;
+  grid-row: 6/7;
+  background-color: white;
+}
+#cover6 {
+  grid-column: 9/10;
+  grid-row: 6/7;
+  background-color: white;
+}
+#cover7 {
+  grid-column: 10/11;
+  grid-row: 7/8;
+  background-color: white;
+}
+#cover8 {
+  grid-column: 9/10;
+  grid-row: 7/8;
+  background-color: white;
+}
+
+#hangmanContainer1 {
+  grid-row: 7/8;
+  grid-column: 11/12;
+  background-color: lime;
+}
+
+@media screen and (max-width: 576px) {
+  #playerNameArea {
+    font-size: 8vw;
+  }
+  #nameContainer {
+    grid-row: 3/4;
+    grid-column: 1/13;
+    font-size: 9vw;
+  }
+  #hangmanpic {
+    grid-row: 5/9;
+    justify-self: start;
+  }
+  #cover1 {
+    grid-column: 11/12;
+    grid-row: 8/9;
+  }
+  #cover2 {
+    grid-column: 11/12;
+    grid-row: 7/8;
+  }
+  #cover3 {
+    grid-column: 11/12;
+    grid-row: 6/7;
+  }
+  #cover4 {
+    grid-column: 11/12;
+    grid-row: 5/6;
+  }
+  #cover5 {
+    grid-column: 10/11;
+    grid-row: 5/6;
+  }
+  #cover6 {
+    grid-column: 9/11;
+    grid-row: 6/7;
+  }
+  #cover7 {
+    grid-column: 9/11;
+    grid-row: 7/8;
+  }
+  #cover8 {
+    grid-column: 9/11;
+    grid-row: 8/9;
+  }
+  #badLetters {
+    grid-row: 5/8;
+    grid-column: 2/7;
+    font-size: 6vw;
+  }
+
+  #letterLabel {
+    /* background-color: red; */
+    grid-row: 9/10;
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 6vw;
+    margin-bottom: 1%;
+  }
+
+  #letterInput {
+    grid-row: 10/11;
+    grid-column: 4/11;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 0%;
+    width: 30vw;
+    height: 12vw;
+    display: flex;
+    justify-self: center;
+    align-self: end;
+  }
+
+  #checkLetterBtn {
+    grid-row: 11/12;
+    grid-column: 4/11;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    /* width: 30vw; */
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-size: 6vw;
+    color: palevioletred;
+    margin-top: 5%;
+  }
+}
+#winContainer {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: pink;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+}
+#winContainer h1 {
+  font-size: 8vw;
+  text-align: center;
+}
+#winContainer p {
+  font-size: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#winWord {
+  font-size: 5vw;
+  color: rgb(209, 38, 95);
+  font-weight: 700;
+}
+#nextBtn {
+  font-size: 3vw;
+  width: 30vw;
+  height: 6vw;
+  padding: 0.5vw;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(204, 130, 155);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  #winContainer {
+    gap: 10vw;
+  }
+  #winContainer h1 {
+    font-size: 15vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #winContainer p {
+    font-size: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #winWord {
+    font-size: 10vw;
+  }
+  #nextBtn {
+    width: 80vw;
+    font-size: 8vw;
+    height: 15vw;
+    border-radius: 20px;
+  }
+}
+#loseContainer {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgb(215, 88, 109);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3vw;
+}
+#loseContainer h1 {
+  font-size: 7vw;
+  text-align: center;
+}
+#loseContainer p {
+  font-size: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#loseWord {
+  font-size: 5vw;
+  color: rgb(249, 199, 215);
+  font-weight: 700;
+}
+#winsAndLosesSoFar {
+  font-size: 2vw;
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+  /* gap:5%; */
+  gap: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+#loseNextBtn {
+  font-size: 2vw;
+  width: 20vw;
+  padding: 0.5vw;
+  font-weight: 500;
+  color: rgb(247, 57, 57);
+  background-color: pink;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#startOverBtn {
+  font-size: 2vw;
+  width: 20vw;
+  padding: 0.5vw;
+  font-weight: 500;
+  color: rgb(247, 57, 57);
+  background-color: pink;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  #loseContainer {
+    gap: 10vw;
+  }
+  #loseContainer h1 {
+    font-size: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #loseContainer p {
+    font-size: 6vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #loseWord {
+    font-size: 8vw;
+  }
+  #winsAndLosesSoFar {
+    font-size: 4vw;
+  }
+  #buttons {
+    flex-direction: column;
+  }
+  #loseNextBtn {
+    width: 40vw;
+    font-size: 6vw;
+  }
+  #startOverBtn {
+    width: 40vw;
+    font-size: 6vw;
+  }
+}
+
+#openVibeContainer {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-color: palevioletred;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#openVibeContainer h1 {
+  grid-row: 2/3;
+  grid-column: 2/12;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  align-self: start;
+  font-size: 7vw;
+  color: whitesmoke;
+}
+
+#openVibeContainer p {
+  grid-row: 4/6;
+  grid-column: 3/11;
+  text-align: center;
+  font-size: 2vw;
+}
+
+#openVibeContainer label {
+  grid-row: 7/8;
+  grid-column: 4/10;
+  display: flex;
+  justify-self: center;
+  align-self: start;
+  font-size: 4vw;
+  color: white;
+  margin-bottom: 2%;
+}
+
+#yourNameInput {
+  grid-column: 5/9;
+  grid-row: 8/9;
+  display: flex;
+  align-self: end;
+  justify-self: center;
+  height: 4vw;
+  width: 20vw;
+  font-size: 3vw;
+  text-align: center;
+  color: rgb(247, 83, 137);
+}
+
+#letsStartTheGameBtn {
+  grid-column: 6/8;
+  grid-row: 10/11;
+  font-size: 3vw;
+  width: 20vw;
+  padding: 0.5vw;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(204, 130, 155);
+  border: 1px solid white;
+  border-radius: 45px;
+}
+@media screen and (max-width: 576px) {
+  #openVibeContainer label {
+    font-size: 10vw;
+    margin-bottom: 0;
+    align-self: end;
+    grid-row: 8/9;
+  }
+  #yourNameInput {
+    height: 15vw;
+    width: 40vw;
+    font-size: 8vw;
+    grid-row: 9/10;
+  }
+  #letsStartTheGameBtn {
+    width: 40vw;
+    font-size: 8vw;
+    grid-row: 9/11;
+    border-radius: 0;
+    grid-row: 11/12;
+  }
+  #openVibeContainer p {
+    grid-row: 4/8;
+    font-size: 5vw;
+    padding-right: 2%;
+    padding-left: 2%;
+    display: flex;
+    align-self: center;
+  }
+  #openVibeContainer h1 {
+    grid-row: 2/4;
+    align-self: center;
+    font-size: 15vw;
+  }
+}
+
+#gameOverContainer {
+  direction: rtl;
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5vw;
+}
+
+#gameOverContainer h1 {
+  font-size: 8vw;
+  text-align: center;
+}
+#gameOverContainer p {
+  font-size: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#winAndLoseContainerInfo {
+  font-size: 3vw;
+}
+#reloadTheGame {
+  font-size: 2vw;
+  width: 20vw;
+  padding: 0.5vw;
+  font-weight: 500;
+  padding: 0.5vw;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(252, 248, 134);
+  border: 1px solid black;
+  border-radius: 45px;
+}
+
+@media screen and (max-width: 576px) {
+  #gameOverContainer {
+    gap: 10vw;
+  }
+  #gameOverContainer h1 {
+    font-size: 13vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #gameOverContainer p {
+    font-size: 6vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  #winAndLoseContainerInfo {
+    font-size: 8vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #reloadTheGame {
+    width: 40vw;
+    font-size: 8vw;
+  }
+}

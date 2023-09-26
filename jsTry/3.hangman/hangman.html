@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman</title>
+    <link rel="stylesheet" href="./style/hangman.css">
+</head>
+<div id="conatiner">
+    <div id="nameContainer"></div>
+    <label for="letterInput" id="letterLabel">איזה אות בא לך לנסות?</label>
+    <input type="text" id="letterInput">
+    <button id="checkLetterBtn">בדוק</button>
+    <div id="badLetters"></div>
+    <div id="playerNameArea"></div>
+    <div id="winNumberArea"></div>
+    <div id="loseNumberArea"></div>
+    <img src="./assets/hangman.png" alt="" id="hangmanpic">
+    <div id="cover1"></div>
+    <div id="cover2"></div>
+    <div id="cover3"></div>
+    <div id="cover4"></div>
+    <div id="cover5"></div>
+    <div id="cover6"></div>
+    <div id="cover7"></div>
+    <div id="cover8"></div>
+</div>
+<div id="winContainer">
+    <h1>איזו זכות! הצלחת!</h1>
+    <p>המילה הנכונה היתה כמובן:</p>
+    <div id="winWord"></div>
+    <button id="nextBtn">המשך להבא בתור</button>
+</div>
+<div id="loseContainer">
+    <h1>אוףףףף, הפסדת ממש ממשי!</h1>
+    <p>המילה הנכונה היתה כמובן:</p>
+    <div id="loseWord"></div>
+    <div id="winsAndLosesSoFar"></div>
+    <div id="buttons">
+        <button id="loseNextBtn">המשך לשאלה הבאה</button>
+        <button id="startOverBtn">משחק חדש</button>
+    </div>
+
+</div>
+
+<div id="openVibeContainer">
+    <h1>איש תלוי: כדורגל</h1>
+    <p>המטרה לנחש באיזה שחקן מדובר. כל פעם אות אחת. צדקת? האות תתגלה בשורת השם. טעית? האות תתגלה באזור הטעויות המפחידי.
+        כמו כן, האיש התלוי שלנו יתגלה לאיטו. התגלה לגמרי? הפסדת אוף. עלית על כל האותיות קודם? ניצחת יש. ומה נותר
+        לומר חוץ מאמן.</p>
+    <label for="yourNameInput">מה שמך?</label>
+    <input type="text" id="yourNameInput">
+    <button id="letsStartTheGameBtn">הבה נתחילה</button>
+</div>
+
+<div id="gameOverContainer">
+    <h1>המשחק נגמר!</h1>
+    <p>היה כיף, כיף שהיה ולהלן התוצאות המקסימות:</p>
+    <div id="winAndLoseContainerInfo"></div>
+    <button id="reloadTheGame">משחק חדיש</button>
+</div>
+
+
+
+<body>
+    <script type="module" src="./script/hangman.js"></script>
+</body>
+
+</html>
