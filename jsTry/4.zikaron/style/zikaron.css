@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.button {
+  background-color: rgb(12, 199, 199, 0.8);
+  border: 1px solid white;
+  font-size: 2vw;
+  width: 10vw;
+  border-radius: 20px;
+}
+#gameContainer {
+  /* background-color: white; */
+  width: 70vw;
+  height: 70vh;
+  display: grid;
+  gap: 0.25em;
+  /* background-color: crimson; */
+  background-color: teal;
+}
+#whoIsPlay {
+  width: 100vw;
+  height: 10vh;
+  /* background-color: red; */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vw;
+}
+
+@media screen and (max-width: 576px) {
+  #container {
+    justify-content: center;
+  }
+  #gameContainer {
+    height: 60vh;
+  }
+  #btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .button {
+    font-size: 5vw;
+    width: 30vw;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 3%;
+  }
+  #whoIsPlay {
+    font-size: 10vw;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
