@@ -241,12 +241,11 @@ const loseCheck = () => {
       }
       conatiner.style.display = "none";
       loseWord.innerHTML = helpWord;
-
       loseCounter++;
       winsAndLosesSoFar.innerHTML = `עד כה ניצחת ${winCounter} פעמים, והפסדת עד כה ${loseCounter} פעמים. <br> נשארו לך עוד ${
         22 - winCounter - loseCounter
       } שחקנים לנחש, אז מה בא לך?`;
-      return;
+      
     }
   }, 1500);
 };
