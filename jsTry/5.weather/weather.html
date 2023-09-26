@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./style/weather.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="searchContainer">
+            <label for="cityInput">שם העיר באנגלית</label>
+            <input type="text" id="cityInput">
+            <button id="searchBtn">חפש</button>
+        </div>
+
+        <div id="weather">
+            <div id="cityName"></div>
+            <div id="description">
+                <h2 id="descriptionText"></h2>
+                <img id="descriptionImg" src="" alt="">
+            </div>
+            <div id="dot">
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+                <div>|</div>
+            </div>
+            <div id="temperature"></div>
+            <div id="day1">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day2">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day3">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day4">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day5">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day6">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+            <div id="day7">
+                <h3></h3>
+                <h3></h3>
+                <h4></h4>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./script/weather.js"></script>
+</body>
+
+</html>
