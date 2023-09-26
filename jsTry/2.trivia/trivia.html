@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trivia</title>
+    <link rel="stylesheet" href="./style/trivia.css">
+</head>
+
+
+
+<body>
+    <div id="openContainer">
+        <h1>משחק הטריוויה!</h1>
+        <p>משחק הטריוויה המגניב ביותר חביבי.<br> במשחק זה נשאל אותך שאלות בנושאים מעניינים כמו מוזיקה וכדורגל.<br> לכל
+            שאלה תהיינה 4 אופציות לתשובה. רק אחת נכונה מאוד.<br> אז להיות מרוכז כי יש 25 שניות לענות כל פעם. לחיצה
+            על התשובה היא חד פעמית אז להיות זהיר ומהיר.<br> היידה היידה!</p>
+        <div id="form">
+            <label for="pName">מה שמך?</label>
+            <input type="text" id="pName"><br>
+            <button id="startPlayBtn">אללה לשחק!</button>
+        </div>
+    </div>
+    <div id="playContainer">
+        <div id="playerDiv">playerDiv</div>
+        <div id="timeDiv">timeDiv</div>
+        <div id="questionDiv">questionDiv</div>
+
+        <div id="option1Div" class="option">option1Div</div>
+        <div id="option2Div" class="option">option2Div</div>
+        <div id="option3Div" class="option">option3Div</div>
+        <div id="option4Div" class="option">option4Div</div>
+
+    </div>
+    <div id="correctContainer">
+        <h1>ישששש צדקת ברמות זה יפה מאוד</h1>
+        <button id="nextQuestion">לשאלה הבאה</button>
+    </div>
+
+    <div id="incorrectContainer">
+        <h1>יו יו יו יו יו איך טעית אתה לא מאמין!!</h1>
+        <p>מצטער אבל המשחק בינינו נגמר לעת עתה. וכמו שאמרה יונה וולך: <br>ואתה תצטרך להתחיל הכל מחדש.</p>
+        <div id="correctAnswersAndTimeInfo2"></div>
+        <div id="buttons">
+            <button id="startOverBtn1">להתחיל הכל מחדש</button>
+            <button id="saveYouLoser">שמירת הנתונים שלך בטבלה</button>
+        </div>
+
+    </div>
+
+    <div id="gameOverWin">
+        <h1>המשחק נגמר חביבי, תודה רבה על האפשרות</h1>
+        <div id="correctAnswersAndTimeInfo"></div>
+        <div id="buttons2">
+            <button id="startOverEndGameBtn">חזרה לעמוד הראשי</button>
+            <button id="saveYou">שמירת הנתונים שלך בטבלה</button>
+        </div>
+
+    </div>
+
+    <div id="top10PlayersContainer">
+        <h1>עשרת המקומות הראשונים של הטריוויה</h1>
+        <div id="top10Table">
+            <div id="placeHeader">מקום</div>
+            <div id="nameHeader">שם</div>
+            <div id="correctAnswersHeader">תשובות נכונות</div>
+            <div id="totalTimeHeader">זמן כולל</div>
+            <div id="place1">1</div>
+            <div id="name1"></div>
+            <div id="correctAnswers1"></div>
+            <div id="totaltime1"></div>
+            <div id="place2">2</div>
+            <div id="name2"></div>
+            <div id="correctAnswers2"></div>
+            <div id="totaltime2"></div>
+            <div id="place3">3</div>
+            <div id="name3"></div>
+            <div id="correctAnswers3"></div>
+            <div id="totaltime3"></div>
+            <div id="place4">4</div>
+            <div id="name4"></div>
+            <div id="correctAnswers4"></div>
+            <div id="totaltime4"></div>
+            <div id="place5">5</div>
+            <div id="name5"></div>
+            <div id="correctAnswers5"></div>
+            <div id="totaltime5"></div>
+            <div id="place6">6</div>
+            <div id="name6"></div>
+            <div id="correctAnswers6"></div>
+            <div id="totaltime6"></div>
+            <div id="place7">7</div>
+            <div id="name7"></div>
+            <div id="correctAnswers7"></div>
+            <div id="totaltime7"></div>
+            <div id="place8">8</div>
+            <div id="name8"></div>
+            <div id="correctAnswers8"></div>
+            <div id="totaltime8"></div>
+            <div id="place9">9</div>
+            <div id="name9"></div>
+            <div id="correctAnswers9"></div>
+            <div id="totaltime9"></div>
+            <div id="place10">10</div>
+            <div id="name10"></div>
+            <div id="correctAnswers10"></div>
+            <div id="totaltime10"></div>
+        </div>
+        <button id="startOverTable">להתחיל מחדש</button>
+    </div>
+
+    <script type="module" src="./script/trivia3.js"></script>
+</body>
+
+</html>
