@@ -369,6 +369,7 @@ const setTable = () => {
 };
 
 window.addEventListener("load", () => {
+  // localStorage.setItem("thePlayersRate");
   if (pName) {
     pName.value = "";
   }
@@ -426,13 +427,11 @@ window.addEventListener("load", () => {
                     " שניות. שכוייעח.";
                 }
                 if (player) {
-                  if (you || !you) {
-                    you = new player(
-                      playerDiv.innerHTML,
-                      correctAnswersCounter,
-                      timeCounter
-                    );
-                  }
+                  you = new player(
+                    playerDiv.innerHTML,
+                    correctAnswersCounter,
+                    timeCounter
+                  );
                 }
                 incorrectContainer.style.display = "flex";
               }
@@ -455,13 +454,13 @@ window.addEventListener("load", () => {
             timeCounter +
             " שניות. שכוייעח.";
         }
-        if (you || !you) {
-          you = new player(
-            playerDiv.innerHTML,
-            correctAnswersCounter,
-            timeCounter
-          );
-        }
+
+        you = new player(
+          playerDiv.innerHTML,
+          correctAnswersCounter,
+          timeCounter
+        );
+
         if (gameOverWin) {
           gameOverWin.style.display = "flex";
         }
@@ -488,26 +487,29 @@ window.addEventListener("load", () => {
       if (gameOverWin) {
         gameOverWin.style.display = "none";
       }
-      // if (playersRate.length) {
-      for (let i = 0; i < playersRate.length; i++) {
-        if (playersRate[i].correctAnswers == you.correctAnswers) {
-          if (playersRate[i].totalTime > you.totalTime) {
+      if (playersRate.length > 0) {
+        for (let i = 0; i < playersRate.length; i++) {
+          if (playersRate[i].correctAnswers == you.correctAnswers) {
+            if (playersRate[i].totalTime > you.totalTime) {
+              playersRate.splice(i, 0, you);
+              localStorage.setItem(
+                "thePlayersRate",
+                JSON.stringify(playersRate)
+              );
+              setTable();
+              return;
+            }
+          } else if (playersRate[i].correctAnswers < you.correctAnswers) {
             playersRate.splice(i, 0, you);
             localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
             setTable();
             return;
           }
-        } else if (playersRate[i].correctAnswers < you.correctAnswers) {
-          playersRate.splice(i, 0, you);
-          localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
-          setTable();
-          return;
         }
+        playersRate.push(you);
+      } else {
+        playersRate.push(you);
       }
-      playersRate.push(you);
-      // } else {
-      //   playersRate.push(you);
-      // }
       localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
       setTable();
     });
@@ -515,7 +517,7 @@ window.addEventListener("load", () => {
   if (saveYouLoser) {
     saveYouLoser.addEventListener("click", () => {
       incorrectContainer.style.display = "none";
-      if (playersRate.length) {
+      if (playersRate.length > 0) {
         for (let i = 0; i < playersRate.length; i++) {
           if (playersRate[i].correctAnswers == you.correctAnswers) {
             if (playersRate[i].totalTime > you.totalTime) {
