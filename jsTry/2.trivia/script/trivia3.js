@@ -487,7 +487,7 @@ window.addEventListener("load", () => {
       if (gameOverWin) {
         gameOverWin.style.display = "none";
       }
-      if (playersRate != null) {
+      if (playersRate.length) {
         for (let i = 0; i < playersRate.length; i++) {
           if (playersRate[i].correctAnswers == you.correctAnswers) {
             if (playersRate[i].totalTime > you.totalTime) {
@@ -517,7 +517,7 @@ window.addEventListener("load", () => {
   if (saveYouLoser) {
     saveYouLoser.addEventListener("click", () => {
       incorrectContainer.style.display = "none";
-      if (playersRate != null) {
+      if (playersRate.length) {
         for (let i = 0; i < playersRate.length; i++) {
           if (playersRate[i].correctAnswers == you.correctAnswers) {
             if (playersRate[i].totalTime > you.totalTime) {
