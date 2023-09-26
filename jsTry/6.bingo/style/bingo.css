@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  direction: rtl;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #bfdee1;
+}
+
+#fullNumbersBoard {
+  grid-row: 1/5;
+  grid-column: 4/10;
+  background-color: pink;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  margin-top: 3%;
+  font-size: 1.5vw;
+}
+
+#yourBoard {
+  grid-row: 8/12;
+  grid-column: 5/9;
+  background-color: #ffccf3;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 3vw;
+  border: 0 !important;
+}
+
+#theNum {
+  grid-row: 5/7;
+  grid-column: 6/8;
+  /* background-color: teal; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 8vw;
+}
+#startTheGame {
+  font-size: 3vw;
+  width: 20vw;
+  padding: 0.5vw;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(204, 132, 130);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #07012029;
+}
+.boardPlace,
+.numPlace {
+  border: 1px solid #b32fd0;
+  /* border-radius: 25px; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  #fullNumbersBoard {
+    grid-row: 2/6;
+    grid-column: 2/12;
+    font-size: 5vw;
+    margin-top: 0%;
+  }
+
+  #yourBoard {
+    grid-row: 8/12;
+    grid-column: 3/11;
+    font-size: 6vw;
+  }
+  #theNum {
+    grid-row: 6/8;
+    grid-column: 4/10;
+    font-size: 15vw;
+  }
+  #startTheGame {
+    font-size: 8vw;
+    width: 40vw;
+  }
+}
