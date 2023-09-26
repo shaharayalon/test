@@ -23,18 +23,15 @@
   border-radius: 20px;
 }
 #gameContainer {
-  /* background-color: white; */
   width: 70vw;
   height: 70vh;
   display: grid;
   gap: 0.25em;
-  /* background-color: crimson; */
   background-color: teal;
 }
 #whoIsPlay {
   width: 100vw;
   height: 10vh;
-  /* background-color: red; */
   color: white;
   display: flex;
   align-items: center;

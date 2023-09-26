@@ -19,35 +19,23 @@
 #playersDiv {
   display: flex;
   flex-direction: row;
-  width: 80vw;
   justify-content: space-between;
   grid-row: 1/3;
-  grid-column: 2/10;
+  grid-column: 2/12;
   margin-top: 1vh;
   padding-top: 1vh;
 }
 #player1 {
-  /* width: 30vw; */
-  /* height: 10vh; */
-  /* background-color: red; */
-  /* justify-self: start;
-  align-self: start; */
   font-size: 4vw;
   color: white;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* grid-row: 1/3; */
-  /* grid-column: 1/3; */
 }
 #player2 {
   font-size: 4vw;
-  /* width: 30vw;
-  height: 10vh; */
-  /* background-color: blue; */
-  /* justify-self: end;
-  align-self: end; */
+
   color: white;
   text-align: center;
   display: flex;
@@ -55,13 +43,8 @@
   align-items: center;
 }
 #game {
-  /* justify-self: center;
-  align-self: center; */
-  /* border: 1px solid black; */
   grid-row: 3/12;
   grid-column: 4/10;
-  /* width: 600px;
-  height: 600px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -69,9 +52,6 @@
 #btn {
   justify-self: center;
   align-self: center;
-  /* margin-bottom: 50px; */
-  /* grid-row: 12/13;
-  grid-column: 6/8; */
   background-color: #71efe3;
   color: #16655d;
   border: 0;
@@ -86,9 +66,6 @@
 }
 
 .point {
-  /* width: 200px;
-  height: 200px; */
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -38,7 +38,6 @@
 #theNum {
   grid-row: 5/7;
   grid-column: 6/8;
-  /* background-color: teal; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,7 +62,6 @@
 .boardPlace,
 .numPlace {
   border: 1px solid #b32fd0;
-  /* border-radius: 25px; */
   display: flex;
   text-align: center;
   justify-content: center;
