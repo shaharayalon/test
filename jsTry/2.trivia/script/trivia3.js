@@ -488,7 +488,7 @@ window.addEventListener("load", () => {
         gameOverWin.style.display = "none";
       }
       if (playersRate.length) {
-        console.log("raziel");
+        console.log("razieli");
         for (let i = 0; i < playersRate.length; i++) {
           if (playersRate[i].correctAnswers == you.correctAnswers) {
             if (playersRate[i].totalTime > you.totalTime) {
