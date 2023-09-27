@@ -369,7 +369,7 @@ const setTable = () => {
 };
 
 window.addEventListener("load", () => {
-  // localStorage.setItem("thePlayersRate");
+  playersRate = [];
   if (pName) {
     pName.value = "";
   }
