@@ -377,10 +377,7 @@ window.addEventListener("load", () => {
   }
 
   if (playersRate) {
-    console.log("ניסיון");
     playersRate = JSON.parse(localStorage.getItem("thePlayersRate"));
-    console.log(typeof playersRate);
-    console.log(playersRate);
   }
   if (startPlayBtn) {
     startPlayBtn.addEventListener("click", () => {
@@ -511,6 +508,7 @@ window.addEventListener("load", () => {
         }
         playersRate.push(you);
       } else {
+        playersRate = [];
         playersRate.push(you);
       }
       localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
@@ -519,11 +517,8 @@ window.addEventListener("load", () => {
   }
   if (saveYouLoser) {
     saveYouLoser.addEventListener("click", () => {
-      console.log(playersRate);
-      console.log(typeof playersRate);
       incorrectContainer.style.display = "none";
       if (playersRate != null) {
-        console.log("לא ריק");
         for (let i = 0; i < playersRate.length; i++) {
           if (playersRate[i].correctAnswers == you.correctAnswers) {
             if (playersRate[i].totalTime > you.totalTime) {
@@ -544,9 +539,7 @@ window.addEventListener("load", () => {
         }
         playersRate.push(you);
       } else {
-        console.log("ריק");
         playersRate = [];
-        console.log(playersRate);
         playersRate.push(you);
       }
       localStorage.setItem("thePlayersRate", JSON.stringify(playersRate));
