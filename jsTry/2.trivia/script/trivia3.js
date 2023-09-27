@@ -369,7 +369,6 @@ const setTable = () => {
 };
 
 window.addEventListener("load", () => {
-  playersRate = [];
   if (pName) {
     pName.value = "";
   }
@@ -486,6 +485,7 @@ window.addEventListener("load", () => {
     saveYou.addEventListener("click", () => {
       if (gameOverWin) {
         gameOverWin.style.display = "none";
+        console.log(typeof playersRate);
       }
       if (playersRate.length) {
         console.log("raziel");
